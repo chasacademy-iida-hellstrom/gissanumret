@@ -10,11 +10,11 @@ let guessed_nums = [];
 function play(){ 
 
 
-       if (numGuesses >= 5) {
-         msg2.textContent = "Du har överskridit antalet gissningar!";
-         return
-
-       }
+       if (numGuesses >= 20) {
+              msg2.textContent = "Du har överskridit antalet gissningar!";
+               return
+       
+             }
     
        let user_guess = document.getElementById("guess").value;
       
@@ -50,5 +50,5 @@ function play(){
               document.getElementById("my_btn").disabled = true;
            }
         }
-
+      
     }
